@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>My Website - Home</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="index.html">
+            MyWebsite
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div
+            class="collapse navbar-collapse"
+            id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link active"
+                        href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        href="services.html">
+                        Services
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <button
+                class="btn btn-light ms-lg-3"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal">
+
+                Login
+
+            </button>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+    <div>
+
+        <h1>
+            Welcome to My Website
+        </h1>
+
+        <p>
+            Discover amazing services and beautiful content.
+        </p>
+
+        <a
+            href="services.html"
+            class="btn btn-primary btn-lg">
+
+            Explore Services
+
+        </a>
+
+        <a
+            href="contact.html"
+            class="btn btn-outline-light btn-lg">
+
+            Contact Us
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     CAROUSEL
+========================= -->
+
+<section class="container my-5">
+
+    <div
+        id="mainCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel">
+
+
+        <!-- Indicators -->
+
+        <div class="carousel-indicators">
+
+            <button
+                type="button"
+                data-bs-target="#mainCarousel"
+                data-bs-slide-to="0"
+                class="active">
+            </button>
+
+            <button
+                type="button"
+                data-bs-target="#mainCarousel"
+                data-bs-slide-to="1">
+            </button>
+
+            <button
+                type="button"
+                data-bs-target="#mainCarousel"
+                data-bs-slide-to="2">
+            </button>
+
+        </div>
+
+
+        <!-- Carousel -->
+
+        <div class="carousel-inner rounded">
+
+            <div class="carousel-item active">
+
+                <img
+                    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200"
+                    class="d-block w-100"
+                    alt="Nature">
+
+                <div class="carousel-caption">
+
+                    <h3>
+                        Beautiful Nature
+                    </h3>
+
+                    <p>
+                        Explore beautiful places around the world.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="carousel-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200"
+                    class="d-block w-100"
+                    alt="Forest">
+
+                <div class="carousel-caption">
+
+                    <h3>
+                        Peaceful Forest
+                    </h3>
+
+                    <p>
+                        Experience the beauty of nature.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="carousel-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1500534623283-312aade485b7?w=1200"
+                    class="d-block w-100"
+                    alt="Mountain">
+
+                <div class="carousel-caption">
+
+                    <h3>
+                        Mountain View
+                    </h3>
+
+                    <p>
+                        Discover amazing landscapes.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Previous -->
+
+        <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon"></span>
+
+        </button>
+
+
+        <!-- Next -->
+
+        <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide="next">
+
+            <span class="carousel-control-next-icon"></span>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     GALLERY
+========================= -->
+
+<section class="container section-padding">
+
+    <h2 class="section-title">
+        Our Gallery
+    </h2>
+
+
+    <!-- ALL CARDS MUST BE INSIDE THIS -->
+
+    <div
+        class="row g-4"
+        id="card-container">
+
+
+        <!-- CARD 1 -->
+
+        <div class="col-md-6 col-lg-3 card-item">
+
+            <div class="card h-100">
+
+                <img
+                    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800"
+                    class="card-img-top"
+                    alt="Nature">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Card 1
+                    </h5>
+
+                    <p class="card-text">
+                        Beautiful mountain landscape with a river
+                        flowing through green trees and mountains.
+                    </p>
+
+                    <button
+                        class="btn btn-primary hide-btn">
+                        Hide
+                    </button>
+
+                    <button
+                        class="btn btn-primary show-btn">
+                        Show
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 2 -->
+
+        <div class="col-md-6 col-lg-3 card-item">
+
+            <div class="card h-100">
+
+                <img
+                    src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800"
+                    class="card-img-top"
+                    alt="Forest">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Card 2
+                    </h5>
+
+                    <p class="card-text">
+                        A peaceful green forest with tall trees
+                        and a natural walking path.
+                    </p>
+
+                    <button
+                        class="btn btn-primary hide-btn">
+                        Hide
+                    </button>
+
+                    <button
+                        class="btn btn-primary show-btn">
+                        Show
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 3 -->
+
+        <div class="col-md-6 col-lg-3 card-item">
+
+            <div class="card h-100">
+
+                <img
+                    src="https://images.unsplash.com/photo-1500534623283-312aade485b7?w=800"
+                    class="card-img-top"
+                    alt="Landscape">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Card 3
+                    </h5>
+
+                    <p class="card-text">
+                        A beautiful sunset over mountains,
+                        with amazing natural scenery.
+                    </p>
+
+                    <button
+                        class="btn btn-primary hide-btn">
+                        Hide
+                    </button>
+
+                    <button
+                        class="btn btn-primary show-btn">
+                        Show
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 4 -->
+
+        <div class="col-md-6 col-lg-3 card-item">
+
+            <div class="card h-100">
+
+                <img
+                    src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800"
+                    class="card-img-top"
+                    alt="Mountain">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Card 4
+                    </h5>
+
+                    <p class="card-text">
+                        A long road passing through rocky
+                        mountains with beautiful scenery.
+                    </p>
+
+                    <button
+                        class="btn btn-primary hide-btn">
+                        Hide
+                    </button>
+
+                    <button
+                        class="btn btn-primary show-btn">
+                        Show
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 5 -->
+
+        <div class="col-md-6 col-lg-3 card-item">
+
+            <div class="card h-100">
+
+                <img
+                    src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800"
+                    class="card-img-top"
+                    alt="Nature">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Card 5
+                    </h5>
+
+                    <p class="card-text">
+                        Amazing natural scenery and beautiful
+                        mountains.
+                    </p>
+
+                    <button
+                        class="btn btn-primary hide-btn">
+                        Hide
+                    </button>
+
+                    <button
+                        class="btn btn-primary show-btn">
+                        Show
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 6 -->
+
+        <div class="col-md-6 col-lg-3 card-item">
+
+            <div class="card h-100">
+
+                <img
+                    src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800"
+                    class="card-img-top"
+                    alt="Mountain">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Card 6
+                    </h5>
+
+                    <p class="card-text">
+                        Beautiful mountain view with a clear
+                        blue sky.
+                    </p>
+
+                    <button
+                        class="btn btn-primary hide-btn">
+                        Hide
+                    </button>
+
+                    <button
+                        class="btn btn-primary show-btn">
+                        Show
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 7 -->
+
+        <div class="col-md-6 col-lg-3 card-item">
+
+            <div class="card h-100">
+
+                <img
+                    src="https://images.unsplash.com/photo-1500534623283-312aade485b7?w=800"
+                    class="card-img-top"
+                    alt="Nature">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Card 7
+                    </h5>
+
+                    <p class="card-text">
+                        Wonderful nature and mountain landscape.
+                    </p>
+
+                    <button
+                        class="btn btn-primary hide-btn">
+                        Hide
+                    </button>
+
+                    <button
+                        class="btn btn-primary show-btn">
+                        Show
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 8 -->
+
+        <div class="col-md-6 col-lg-3 card-item">
+
+            <div class="card h-100">
+
+                <img
+                    src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800"
+                    class="card-img-top"
+                    alt="Mountain">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Card 8
+                    </h5>
+
+                    <p class="card-text">
+                        Beautiful snowy mountain landscape.
+                    </p>
+
+                    <button
+                        class="btn btn-primary hide-btn">
+                        Hide
+                    </button>
+
+                    <button
+                        class="btn btn-primary show-btn">
+                        Show
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 9 -->
+
+        <div class="col-md-6 col-lg-3 card-item">
+
+            <div class="card h-100">
+
+                <img
+                    src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?w=800"
+                    class="card-img-top"
+                    alt="Plants">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Card 9
+                    </h5>
+
+                    <p class="card-text">
+                        Beautiful green plants and natural scenery.
+                    </p>
+
+                    <button
+                        class="btn btn-primary hide-btn">
+                        Hide
+                    </button>
+
+                    <button
+                        class="btn btn-primary show-btn">
+                        Show
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 10 -->
+
+        <div class="col-md-6 col-lg-3 card-item">
+
+            <div class="card h-100">
+
+                <img
+                    src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800"
+                    class="card-img-top"
+                    alt="Landscape">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Card 10
+                    </h5>
+
+                    <p class="card-text">
+                        Beautiful outdoor landscape.
+                    </p>
+
+                    <button
+                        class="btn btn-primary hide-btn">
+                        Hide
+                    </button>
+
+                    <button
+                        class="btn btn-primary show-btn">
+                        Show
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =========================
+         PAGINATION
+    ========================= -->
+
+    <nav
+        aria-label="Page navigation"
+        class="mt-5">
+
+        <ul
+            class="pagination justify-content-center"
+            id="pagination">
+        </ul>
+
+    </nav>
+
+</section>
+
+
+
+<!-- =========================
+     REVIEWS
+========================= -->
+
+<section class="container section-padding">
+
+    <h2 class="section-title">
+        Customer Reviews
+    </h2>
+
+
+    <div class="row g-4">
+
+
+        <div class="col-md-4">
+
+            <div class="card h-100 p-4 text-center">
+
+                <img
+                    src="https://i.pravatar.cc/100?img=12"
+                    class="review-img mx-auto mb-3"
+                    alt="Aman">
+
+                <h5>
+                    Aman Khan
+                </h5>
+
+                <p class="text-warning fs-4">
+                    ★★★★★
+                </p>
+
+                <p>
+                    The service was excellent and I really
+                    enjoyed my experience.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="col-md-4">
+
+            <div class="card h-100 p-4 text-center">
+
+                <img
+                    src="https://i.pravatar.cc/100?img=33"
+                    class="review-img mx-auto mb-3"
+                    alt="Arman">
+
+                <h5>
+                    Arman Khan
+                </h5>
+
+                <p class="text-warning fs-4">
+                    ★★★★★
+                </p>
+
+                <p>
+                    Amazing experience. Highly recommended!
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="col-md-4">
+
+            <div class="card h-100 p-4 text-center">
+
+                <img
+                    src="https://i.pravatar.cc/100?img=47"
+                    class="review-img mx-auto mb-3"
+                    alt="Ali">
+
+                <h5>
+                    Ali Ahmed
+                </h5>
+
+                <p class="text-warning fs-4">
+                    ★★★★☆
+                </p>
+
+                <p>
+                    Great service, nice atmosphere and
+                    friendly staff.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="container text-center">
+
+        <h4>
+            MyWebsite
+        </h4>
+
+        <p>
+            Building beautiful websites with Bootstrap.
+        </p>
+
+        <p>
+            © 2026 MyWebsite. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================
+     LOGIN MODAL
+========================= -->
+
+<div
+    class="modal fade"
+    id="loginModal"
+    tabindex="-1">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    Login
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+
+            <div class="modal-body">
+
+                <form id="loginForm">
+
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="loginEmail"
+                            class="form-control">
+
+                        <div
+                            id="loginEmailError"
+                            class="text-danger">
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            class="form-control">
+
+                        <div
+                            id="loginPasswordError"
+                            class="text-danger">
+                        </div>
+
+                    </div>
+
+
+
+                    <button
+                        class="btn btn-primary w-100"
+                        type="submit">
+
+                        Login
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<!-- jQuery MUST COME FIRST -->
+<script
+    src="https://code.jquery.com/jquery-3.7.1.min.js">
+</script>
+
+
+<!-- Bootstrap JS -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<!-- Your JavaScript -->
+<script src="website.js"></script>
+
+
+</body>
+
+</html>
